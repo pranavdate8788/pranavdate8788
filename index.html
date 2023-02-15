@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./style.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./mobile.css"  media="screen and (max-width: 480px)">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -52,10 +54,10 @@
           <a href="#skills">Skills</a>
           <a href="#myproject">My Project</a>
           <a href="#contact">Contact</a>
-          <button class="chat">Lets chat</button>
+          <a href="#contact"> <button class="chat">Lets chat</button></a>
         </nav>
       </div>
-      <div class="home" id="Home">
+      <div class="home " id="Home">
         <div class="content">
           <div class="name">
             <h3>Hello, I am</h3>
@@ -63,19 +65,21 @@
             <h2 class="typewriter">I am Web Developer</h2>
           </div>
         </div>
+        <div class="content-right">
         <div class="profile-pic">
           <img src="./photo4.jpg" class="image" />
         </div>
         <div class="social-media">
-         <a href="https://github.com/pranavdate8788" target="_blank"> 
-          <i class="fa-brands fa-square-github socialmedia-icons"></i></a>
-         <a href="https://www.instagram.com/pranavdate_8788" target="_blank"> <i class="fa-brands fa-instagram socialmedia-icons"></i></a>
-         <a href="mailto:pranavdate908@gmail.com"><i class="fa-regular fa-envelope socialmedia-icons"></i></a>
-         <a href="https://www.linkedin.com/in/pranav-date-9b4846206/" target="_blank"> <i class="fa-brands fa-linkedin socialmedia-icons"></i></a>
+         <a href="https://github.com/pranavdate8788" class="top-icons" target="_blank"> 
+          <i class="fa-brands fa-square-github socialmedia-icons"></i><span class="text0">Github</span></a>
+         <a href="https://www.instagram.com/pranavdate_8788" class="top-icons" target="_blank"> <i class="fa-brands fa-instagram socialmedia-icons"></i><span class="text0">Instagram</span></a>
+         <a href="mailto:pranavdate908@gmail.com" class="top-icons"><i class="fa-regular fa-envelope socialmedia-icons"></i><span class="text0">Gmail</span></a>
+         <a href="https://www.linkedin.com/in/pranav-date-9b4846206/" class="top-icons" target="_blank"> <i class="fa-brands fa-linkedin socialmedia-icons"></i><span class="text0">LinkdIn</span></a>
 
 
 
         </div>
+      </div>
       </div>
 
       <div class="details" id="about">
@@ -88,8 +92,11 @@
         <h4>I am front-end developer</h4>
         <p>
           Hi Friends, my name is shivaji rao patil from Hyderabad. I parsuing my B-Tech in stream of computer science and engineering from nict college, xxx with aggregate 65%.  
-        </p>
-              <button class="cv-button">Download cv</button>
+        </p> 
+        <a href="./PranavDate_InternshalaResume.pdf"  download>
+          <button class="cv-button">Download cv</button>
+        </a>
+              
        </div>
       </div>
       <div class="skill-container" id="skills">
@@ -205,51 +212,52 @@
         <h1>Contact Me</h1> 
       <p>Hi Friends, my name is shivaji rao patil from Hyderabad.</p>
       </div>
+      <div class="cont-child">
       <div class="first-container">
-         <div class="icons-left">
-          <div class="address">
-            <div class="add-icon">
-          <i class="fa-solid fa-location-dot contact-icon"></i>
-            </div>
-          <div class="add-text">
-          <span>Address</span>
-          <span>pune</span>
+        <form id="contact-form"  >
+          <div class="top-field">
+            <div class="cont-name">
+            <span>Full Name</span>
+            <input class="full-name" name="user_name" type="text" placeholder="Name"> </div>
+           <div class="cont-number" > <span>Contact No</span>
+            <input class="mob"  name="contact_number" type="text" placeholder="mobile no"></div>
           </div>
-        </div>
-        <div class="email">
-          <div class="mail-icon">
-          <i class="fa-solid fa-envelope contact-icon"></i></div>
-          <div class="mail-text">
-          <span>Email</span>
-          <span>pranavdate908@gmail.com</span>
-        </div>
-        </div>
-        <div class="phone">
-          <div class="call-icon">
-          <i class="fa-solid fa-phone contact-icon"></i></div>
-          <div class="call-text">
-          <span>Call</span>
-          <span>8788046270</span>
-        </div>
-        </div>
-         </div>
-<div class="input-right">
-  <form id="contact-form" >
-       <div  class="name-field">
-<input  class="first-last" name="user_name" type="text" placeholder=" full name">
-<input class="first-last" name="contact_number" type="text" placeholder="contact no">
-       </div>
-       <div class="input-message">
-       <input type="email" placeholder="email" name="user_email">
-       <input type="text" placeholder="enter your message" name="message">
+          <div class="bottom-field">
+            <div class="cont-mail">
+            <span>Your Email</span>
+            <input class="gmail" name="user_email" type="email" placeholder="Your mail"></div>
+            <div class="cont-message">
+            <span>Message</span>
+            <textarea class="text" name="message" placeholder="write something" cols="10" rows="3"></textarea></div>
+          </div>
+          <button type="submit" value="send" class="send-message">Send Message</button>
+        </form>
       </div>
-      <button type="submit" value="send" class="send-message">Send Message</button>
-    </form>
+     <div class="second-container">
+    <span style="font-size: 1.2rem; font-weight: bolder; padding: .5rem;">Location</span>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822902.2105591972!2d71.81345674738748!3d20.983615667912424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc32bede9acd24f%3A0xb293693a1179d061!2sPranav%20date%20pvt%20ltd!5e0!3m2!1sen!2sin!4v1676478930817!5m2!1sen!2sin" width="490" height="400" style="border:0;" allowfullscreen="" loading="lazy"  referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+    </div>
+    <div class="cont-footer">
+<div class="footercontent-1">
+  <i class="fa-solid fa-location-dot"></i>
+  <span>Address</span>
+  <span>Pranav date pvt ltd
+    R64W+64P, Sone Sangavi, Maharashtra 412220</span>
+   
+</div>
+<div class="footercontent-2">
+  <i class="fa-solid fa-envelope"></i>
+  <span>Gmail</span>
+  <span>pranavdate908@gmal.com</span>
+</div>
+<div class="footercontent-3">
+  <i class="fa-solid fa-phone"></i>
+  <span>Phone</span>
+  <span>+91 8788046270</span>
 </div>
 
- 
-      </div>
-     
+    </div>
     </div>
     <script src="./script.js"></script>
   </body>

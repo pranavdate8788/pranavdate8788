@@ -52,6 +52,7 @@ nav {
   padding: 8px 17px;
   border-radius: 1rem;
   font-size: 1rem;
+  cursor: pointer;
   color: rgb(234, 239, 244);
 }
 .home {
@@ -522,6 +523,7 @@ a :visited {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #111;
 }
 .footercontent-2 {
   width: 33%;
@@ -531,6 +533,7 @@ a :visited {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #111;
 }
 .footercontent-3 {
   width: 33%;
@@ -540,6 +543,7 @@ a :visited {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #111;
 }
 .fa-solid {
   background: #d1570c;

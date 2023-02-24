@@ -321,7 +321,45 @@ a :visited {
 }
 .right-field {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
 }
+.certificate-1{
+display: flex;
+flex-direction: column;
+ /* width: 50%; */
+
+}
+.certi-1{
+  width: 50%;
+  height: 40px;
+  background: #e2b893;
+  /* padding: .5rem;  */
+  font-size: 1.1rem;
+  border-radius: 10px;
+  margin:  .7rem;
+  cursor: pointer;
+}
+.certificate-2{
+  display: flex;
+   flex-direction: column;
+  /* width: 50%; */
+  
+  }
+  .certi-2{
+    width: 50%;
+    height: 40px;
+    background: #e2b893;
+    /* padding: .5rem;  */
+    font-size: 1.1rem;
+    border-radius: 10px;
+    margin: .7rem;
+    cursor: pointer;
+  }
+
 .myproject-container {
   width: 100%;
   margin-top: 1rem;

@@ -334,7 +334,7 @@ flex-direction: column;
 
 }
 .certi-1{
-  width: 50%;
+  width: 100%;
   height: 40px;
   background: #e2b893;
   /* padding: .5rem;  */
@@ -343,6 +343,10 @@ flex-direction: column;
   margin:  .7rem;
   cursor: pointer;
 }
+.SIH{
+  display: flex;
+  gap: 1rem;
+}
 .certificate-2{
   display: flex;
    flex-direction: column;
@@ -350,7 +354,7 @@ flex-direction: column;
   
   }
   .certi-2{
-    width: 50%;
+    width: 100%;
     height: 40px;
     background: #e2b893;
     /* padding: .5rem;  */
@@ -359,7 +363,10 @@ flex-direction: column;
     margin: .7rem;
     cursor: pointer;
   }
-
+.web{
+  display: flex;
+  gap: 1rem;
+}
 .myproject-container {
   width: 100%;
   margin-top: 1rem;

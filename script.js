@@ -8,13 +8,13 @@ function SendMail() {
   console.log(params);
   emailjs.sendForm("service_r6ebwfl", "template_9np62vi", params).then(
     function () {
-      console.log("SUCCESS!");
+      alert("Thank you for message ....");
     },
     function (error) {
       console.log("FAILED...", error);
     }
   );
-  alert("Thank you..! See you Soon....");
+
   document.getElementById("contact-form").reset();
 }
 

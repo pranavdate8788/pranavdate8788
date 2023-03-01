@@ -12,6 +12,9 @@
       href="./mobile.css"
       media="screen and (max-width: 480px)"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Josefin+Sans:ital,wght@0,400;1,300&family=Roboto+Mono&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -39,10 +42,10 @@
 
             emailjs.sendForm("service_r6ebwfl", "template_9np62vi", this).then(
               function () {
-                console.log("SUCCESS!");
+                alert("Thank you for message ....");
               },
               function (error) {
-                console.log("FAILED...", error);
+                 
               }
             );
           });
@@ -54,11 +57,11 @@
     <nav>
       <div class="logo">Pranav</div>
       <ul class="nav-links">
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#myproject">My Project</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a class="p" href="#Home">Home</a></li>
+        <li><a class="p" href="#about">About</a></li>
+        <li><a class="p" href="#skills">Skills</a></li>
+        <li><a class="p" href="#myproject">My Project</a></li>
+        <li><a class="p"` href="#contact">Contact</a></li>
         <li>
           <a href="#contact"> <button class="chat" onclick="sendMessage()">Lets chat</button></a>
         </li>
@@ -70,7 +73,7 @@
       <div class="content">
         <div class="name">
           <h3>Hello, I am</h3>
-          <h1>PRANAV DATE</h1>
+          <h1>PRANAV  DATE</h1>
           <h2 class="typewriter">I am Web Developer</h2>
         </div>
       </div>
@@ -230,50 +233,54 @@
         <p>Hi Friends, My name is Pranav shahaji date from pune.</p>
       </div>
       <div class="cont-child">
-        <div class="first-container">
-          <form id="contact-form">
-            <div class="top-field">
-              <div class="cont-name">
-                <span>Full Name</span>
+        <div class="wrapper">
+          <form id="contact-form" >
+            <div class="top-field ">
+              <div class=" field">
+               
                 <input
                   class="full-name"
                   name="user_name"
                   type="text"
-                  placeholder="Name"
+                   
                 />
+                <label for="">Full Name </label>
               </div>
-              <div class="cont-number">
-                <span>Contact No</span>
+              <div class=" field">
+               
                 <input
                   class="mob"
                   name="contact_number"
                   type="text"
-                  placeholder="mobile no"
+                   
                 />
+                <label for="">Contact No </label>
               </div>
             </div>
             <div class="bottom-field">
-              <div class="cont-mail">
-                <span>Your Email</span>
+              <div class=" field">
+                 
                 <input
                   class="gmail"
                   name="user_email"
                   type="email"
-                  placeholder="Your mail"
+                 
                 />
+                <label for="">Your Email </label>
               </div>
-              <div class="cont-message">
-                <span>Message</span>
-                <textarea
+              <div class=" field">
+               
+                <input
+                style="height: 60px;"
                   class="text"
                   name="message"
-                  placeholder="write something"
-                  cols="10"
-                  rows="3"
-                ></textarea>
+                  
+                 
+                />
+                <label for="">Message </label>
               </div>
             </div>
-            <button type="submit" value="send" class="send-message">
+            <button  type="submit" value="send" class="send-message">
               Send Message
             </button>
           </form>

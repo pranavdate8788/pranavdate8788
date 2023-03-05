@@ -69,7 +69,7 @@ nav {
   pointer-events: auto;
 }
 
-@media only screen and (min-width: 480px) {
+/* @media only screen and (min-width: 480px) {
   nav {
     flex-direction: column;
     justify-content: space-between;
@@ -87,7 +87,7 @@ nav {
   .nav-links li {
     margin: 0 10px;
   }
-} 
+}  */
 
  
 .home {
@@ -241,7 +241,7 @@ a  :visited{
 }
 .details {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   padding: 1rem;
   /* background: rebeccapurple; */
   height: auto;
@@ -359,34 +359,36 @@ a  :visited{
 }
 .right-field {
   width: 100%;
-  height: 500px;
+  height: auto;
   /* background: #e97109; */
 }
 .myproject-container {
   width: 100%;
   display: flex;
+  /* flex-wrap: wrap; */
   flex-direction: column;
   margin-top: 1rem;
-  padding: 0.5rem;
+  padding: 1rem;
 height: auto;
 }
 .project-heading {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: .5rem;
   /* background: blueviolet; */
 }
 .project-field {
   display: flex;
-  flex-direction: column;
-  /* flex-wrap: wrap; */
-  justify-content: center;
+  width: 100%;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  /* justify-content: center; */
   /* gap: 1rem; */
-  align-items: center;
+  /* align-items: center; */
   /* background: greenyellow; */
-  /* padding: 1rem; */
-  /* margin: 5rem; */
+  padding: 1rem;
+  margin: 1rem;
 }
 .project-box {
   /* color: #ffff; */
@@ -514,7 +516,7 @@ form .field input:valid ~ label {
 }
 
 .send-message {
-  width: 50%;
+  width: 40%;
   height: 50px;
   background: #ed8442;
   color: #f0edeb;
@@ -546,11 +548,11 @@ form .field input:valid ~ label {
   width: 100%;
   height: auto;
   padding: .7rem;
-  gap: 1rem;
+  gap: .7rem;
 align-items: center;
 justify-content: center;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   background: #f5e7dc;
   justify-content: space-between;
  }

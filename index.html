@@ -12,6 +12,16 @@
       href="./mobile.css"
       media="screen and (max-width: 480px)"
     />
+    <link
+    rel="stylesheet"
+    href="./desktop.css"
+    media="screen and (max-width: 768px)"
+  />
+  <link
+  rel="stylesheet"
+  href="./small.css"
+  media="screen and (max-width: 320px)"
+/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Josefin+Sans:ital,wght@0,400;1,300&family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -53,9 +63,11 @@
     </script>
   </head>
   <body>
-    <div class="container">
+    
     <nav>
       <div class="logo">Pranav</div>
+      <input type="checkbox" style="display:none;" id="menu-toggle" />
+      <label for="menu-toggle"   class="menu-icon">&#9776;</label>
       <ul class="nav-links">
         <li><a class="p" href="#Home">Home</a></li>
         <li><a class="p" href="#about">About</a></li>
@@ -291,8 +303,9 @@
           >
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822902.2105591972!2d71.81345674738748!3d20.983615667912424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc32bede9acd24f%3A0xb293693a1179d061!2sPranav%20date%20pvt%20ltd!5e0!3m2!1sen!2sin!4v1676478930817!5m2!1sen!2sin"
-            width="490"
+            width="450"
             height="400"
+            class="map"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"

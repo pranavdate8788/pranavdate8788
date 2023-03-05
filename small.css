@@ -125,7 +125,7 @@ nav {
 @keyframes t {
   90%,
   100% {
-    width: 300px;
+    /* width: 250px; */
   }
 }
 
@@ -572,8 +572,8 @@ form .field input:valid ~ label {
   display: flex;
 }
 .map{
-    height: 300px;
-    width: 300px;
+    height: 270px;
+    width: 270px;
 }
  .second-container{
   display: flex;

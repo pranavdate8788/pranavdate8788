@@ -305,7 +305,7 @@ a  :visited{
   /* height: 500px; */
   display: flex;
   flex-direction: column;
-
+height: auto;
   width: 100%;
 }
 .skillbox {

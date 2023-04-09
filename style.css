@@ -564,6 +564,10 @@ form .field input:valid ~ label {
   padding: 1rem;
   margin: 0.7rem 0;
 }
+.map{
+  height: 500px;
+  width: 550px;
+}
 .cont-footer {
   width: 100%;
   height: auto;

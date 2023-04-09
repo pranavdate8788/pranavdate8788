@@ -68,34 +68,13 @@ nav {
   opacity: 1;
   pointer-events: auto;
 }
-
-/* @media only screen and (min-width: 480px) {
-  nav {
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    position: static;
-    width: auto;
-    height: auto;
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .nav-links li {
-    margin: 0 10px;
-  }
-}  */
-
+ 
  
 .home {
  
-  display: flex;
-  /* margin-top: 100px; */
+  display: flex; 
   flex-direction: column;
-  /* height: calc(min(90vh, 100vh)); */
+   
   height: 650px;
    
   align-items: center;

@@ -33,27 +33,31 @@ nav {
   visibility: hidden;
 }
 .logo {
-  font-size: 1.5em;
+  height: 40px;
+  cursor: pointer;
+  opacity: .9;
+  border-radius: 10px;
 }
 .nav-links {
   display: flex;
+  align-items: center;
 }
 .nav-links li {
   list-style: none;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .nav-links li a {
-  color: #000;
+  color: #5f5757;
   text-decoration: none;
 }
 .p {
   position: relative;
-  color: #000;
+  /* color: #b60707; */
   text-decoration: none;
 }
 
 .p:hover {
-  color: #000;
+  color: #171212;
 }
 
 .p::before {
@@ -80,6 +84,13 @@ nav {
   font-size: 1rem;
   cursor: pointer;
   color: rgb(234, 239, 244);
+}
+.chat:hover{
+  color: #382f38;
+  transition: transform 0.7s;
+  transform: scale(1.1);
+  background-color: rgb(226, 211, 211);
+  color: rgb(14, 5, 5);
 }
 .home {
   background-repeat: no-repeat;
@@ -259,14 +270,12 @@ a :visited {
 
 .photo:hover {
   transform: scale(1.1);
-  box-shadow: 10px 10px 5px rgb(183, 152, 152);
-  -moz-box-shadow: 10px 10px 5px rgb(126, 110, 110);
-  -webkit-box-shadow: 10px 10px 5px rgb(164, 131, 131);
-  -khtml-box-shadow: 10px 10px 5px rgb(244, 194, 194);
+  box-shadow: 5px 5px 5px rgb(237, 204, 204);
+  
 }
 .about-field {
   width: 50%;
-  padding: 1rem;
+  padding: 1rem 2 rem;
   /* background: rgb(221, 13, 162); */
   font-size: 1.5rem;
   margin: auto;
@@ -428,7 +437,7 @@ a :visited {
   margin: 1rem;
   color: #44101a;
   width: 250px;
-  height: 300px;
+  height: auto;
   background: hsl(175, 42%, 89%);
   border-radius: 1rem;
   transition: all;
